@@ -1,21 +1,8 @@
-# langchain-ts-starter
+# Document Query
 
-Boilerplate to get started quickly with the [Langchain Typescript SDK](https://github.com/hwchase17/langchainjs).
+A usage of LangChain to ask questions about a document. I'm testing this out with the Tax Code of the Dominican Republic (see `src/data/doc.pdf`), which I converted into text using `pdftotext` (see `src/data/doc.txt`).
 
-This uses the same tsconfig and build setup as the [examples repo](https://github.com/hwchase17/langchainjs/tree/main/examples), to ensure it's in sync with the official docs.
+Next steps:
 
-# What's included
-
-- Typescript
-- .env file configuration
-- ESLint and Prettier for formatting
-- Turborepo to quickly run build scripts
-- `tsx` to quickly run compiled code
-
-# How to use
-
-- Clone this repository
-- `npm install`
-- Write your code in `src`
-- `npx turbo run build lint format` to run build scripts quickly in parallel
-- `npm start` to run your program
+1. Enable conversational queries so the model has context about the previous question.
+2. Create a simple UI to run this online (using Next.js and hosting in Vercel).
