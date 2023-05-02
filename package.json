@@ -28,7 +28,9 @@
   "license": "MIT",
   "dependencies": {
     "dotenv": "^16.0.3",
-    "langchain": "^0.0.39"
+    "hnswlib-node": "^1.4.2",
+    "langchain": "^0.0.64",
+    "pdf-parse": "^1.1.1"
   },
   "devDependencies": {
     "@tsconfig/recommended": "^1.0.2",
